@@ -1,8 +1,8 @@
-const reducer = (state = [], action) => {
-    switch (action.type) {
-        default:
-            return state;
-    }
-}
+import { combineReducers } from 'redux';
+import praise from './praise';
+
+const reducer = combineReducers({
+    praise
+})
 
 export default reducer;
